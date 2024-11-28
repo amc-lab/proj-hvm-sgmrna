@@ -2,7 +2,7 @@
 
 # Process HVM Amplicon Data
 # A. M. Chakrabarti
-# 24th MAy 2024
+# 24th May 2024
 
 #SBATCH --job-name="hvm_amplicon"
 #SBATCH --time=48:00:00

@@ -1,7 +1,12 @@
 #!/usr/bin/env nextflow
 
-params.input = 'samplesheet.csv'
-params.fasta = '/camp/lab/bauerd/home/users/chakraa2/projects/harriet/202405/ref/amplicon.fa'
+// Nextflow pipeline for Harriet's amplicon alignment metrics
+// A. M. Chakrabarti
+// 24th May 2024
+
+// Check if the required parameters are provided
+if(!params.input) { exit 1, "--input (samplesheet) is not specified." } 
+if(!params.fasta) { exit 1, "--fasta (amplicon fasta) is not specified." } 
 
 // Create channel for input samplesheet
 Channel
